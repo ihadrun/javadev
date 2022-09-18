@@ -6,12 +6,15 @@
             int n = in.nextInt();
             int m = in.nextInt();
 
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i <n; i++) {
                 int num = in.nextInt();
-             System.out.println(num);
-          
- 
+                if(!deque.contains(num)) {
+            deque.add(num);
+            
+                }
             }
+           
+            System.out.println(deque.size());
             
             for (Iterator itr = deque.descendingIterator();
                     itr.hasNext();) {
